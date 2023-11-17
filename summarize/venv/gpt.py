@@ -42,12 +42,6 @@ def get_summary(text):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-def main():
-    user_input = input("Enter the text you want to summarize: ")
-    summary = get_summary(user_input)
-    if summary:
-        print("\nSummary:")
-        print(summary)
 
 if __name__ == "__main__":
     app.run(debug=True)
