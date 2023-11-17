@@ -1,8 +1,9 @@
 from openai import OpenAI
 
-client = OpenAI(api_key='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') #not sure but whatever
+client = OpenAI(api_key='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') #not sure but whatever
 # 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 - tony
 # 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 - key 2
+# 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 - key 3
 
 # Set your API key here (if not using an environment variable)
  #not secure but whatever
@@ -18,12 +19,12 @@ def get_summary(text):
             model="text-davinci-003",  # Model you're using
             #model="gpt-4",
             prompt=f"{text}\n\n Summarize the former text that I inputted, but then explain how it relates to Texas A&M Univerity.",
-            temperature=0.9,  # Controls randomness - cranking up 
+            temperature=1.0,  # Controls randomness - cranking up 
             max_tokens=150,  # Max length of response
-            top_p=1,  # Diversity of output
+            top_p=1.0,  # Diversity of output
             frequency_penalty=1,  # Keeps it succinct
             presence_penalty=0)
-        return response.choices[0].text.strip()
+        return response.choices[0].text.strip() + "\nThanks and Gig 'em"
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
