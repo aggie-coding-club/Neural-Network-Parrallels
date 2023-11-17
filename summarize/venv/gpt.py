@@ -5,7 +5,7 @@
 #from openai 
 from openai import OpenAI
 
-client = OpenAI(api_key='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') #not secure but whatever
+client = OpenAI(api_key='') #not secure but whatever
 
 
 
