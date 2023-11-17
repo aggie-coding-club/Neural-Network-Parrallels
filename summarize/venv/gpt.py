@@ -1,14 +1,13 @@
 #import openai
 
 # Set your API key here (if not using an environment variable)
-#openai.api_key = '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'  # Not secure but for demonstration
+#openai.api_key = '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'
 #from openai 
 from openai import OpenAI
 
-client = OpenAI(api_key='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') #not sure but whatever
+client = OpenAI(api_key='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') #not secure but whatever
 
-# Set your API key here (if not using an environment variable)
- #not secure but whatever
+
 
 def get_summary(text):
     try:
