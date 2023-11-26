@@ -20,10 +20,10 @@ def get_page_text(url):
     
     return content
 
-print(links_list[8:12])     
+    
 
 
-#me = soup.find("div", id= "contentHolder")
+
 txt = 0
 try:
     for link in links_list[5:20]:
