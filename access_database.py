@@ -17,3 +17,4 @@ def search_database(query_text):
         results = main_client.thecollection.query(query_embeddings=query_embed, n_results=how_many_results)
     except ValueError:
         print('The collection does not exists yet?? well it should you shouldnt be seeing this error unless our database has no data in it at all :/')
+    return results
